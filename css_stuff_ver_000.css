@@ -11,11 +11,14 @@ body{
 	line-height:1.6;
 	font-family: 'Source Code Pro', Source Code Pro, AppleGothic, sans-serif;
 	font-size: 14px;
-	color: #FFFF;
+	
 }
-a:link {color: #FFFF; text-decoration: none; }
-a:active {color: #FFFF; text-decoration: none; }
-a:visited {color: #FFFF; text-decoration: none; }
+.text{
+    color: #FFF !important;
+}
+a:link {color: #FFF; text-decoration: none; }
+a:active {color: #FFF; text-decoration: none; }
+a:visited {color: #FFF; text-decoration: none; }
 a:hover {color: #F08080; text-decoration: underline; }
 img {
 	max-width: 100%;

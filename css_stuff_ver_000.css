@@ -1,0 +1,62 @@
+body{
+	-webkit-animation: animate_bg 5s;
+	animation: animate_bg 5s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	/* <!-- Change color css --> */
+	background: #151515;
+	width:100%;
+	max-width:40em;
+	margin:10px auto;
+	line-height:1.6;
+	font-family: 'Source Code Pro', Source Code Pro, AppleGothic, sans-serif;
+	font-size: 14px;
+	color: #FFFF;
+}
+a:link {color: #FFFF; text-decoration: none; }
+a:active {color: #FFFF; text-decoration: none; }
+a:visited {color: #FFFF; text-decoration: none; }
+a:hover {color: #F08080; text-decoration: underline; }
+img {
+	max-width: 100%;
+	height: auto;
+}
+.secret{
+	color: #151515;
+	-webkit-animation: animate_bg_secret 5s;
+	animation: animate_bg_secret 5s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+@keyframes animate_bg_secret {
+	0%   {color:#080808;}
+	20%  {color:#151515;}
+	40% {color:#212121;}
+	60%  {color:#151515;}
+	80%   {color:#080808;}
+	100%   {color:#080808;}
+}
+@-webkit-keyframes animate_bg_secret {
+	0%   {color:#080808;}
+	20%  {color:#151515;}
+	40% {color:#212121;}
+	60%  {color:#151515;}
+	80%   {color:#080808;}
+	100%   {color:#080808;}
+}
+@keyframes animate_bg {
+	0%   {background:#080808;}
+	20%  {background:#151515;}
+	40% {background:#212121;}
+	60%  {background:#151515;}
+	80%   {background:#080808;}
+	100%   {background:#080808;}
+}
+@-webkit-keyframes animate_bg {
+	0%   {background:#080808;}
+	20%  {background:#151515;}
+	40% {background:#212121;}
+	60%  {background:#151515;}
+	80%   {background:#080808;}
+	100%   {background:#080808;}
+}

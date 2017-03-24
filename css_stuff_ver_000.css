@@ -13,24 +13,25 @@ body{
 	font-size: 14px;
 	
 }
+
 .text{
     color: #FFF !important;
 }
+
 a:link {color: #FFF; text-decoration: none; }
 a:active {color: #FFF; text-decoration: none; }
 a:visited {color: #FFF; text-decoration: none; }
 a:hover {color: #F08080; text-decoration: underline; }
+
 img {
 	max-width: 100%;
 	height: auto;
 }
+
 .secret{
-	color: #151515;
-	-webkit-animation: animate_bg_secret 5s;
-	animation: animate_bg_secret 5s;
-	-webkit-animation-iteration-count: infinite;
-	animation-iteration-count: infinite;
+	visibility: hidden;
 }
+
 @keyframes animate_bg_secret {
 	0%   {color:#080808;}
 	20%  {color:#151515;}
@@ -39,6 +40,7 @@ img {
 	80%   {color:#080808;}
 	100%   {color:#080808;}
 }
+
 @-webkit-keyframes animate_bg_secret {
 	0%   {color:#080808;}
 	20%  {color:#151515;}
@@ -47,6 +49,7 @@ img {
 	80%   {color:#080808;}
 	100%   {color:#080808;}
 }
+
 @keyframes animate_bg {
 	0%   {background:#080808;}
 	20%  {background:#151515;}
@@ -55,6 +58,7 @@ img {
 	80%   {background:#080808;}
 	100%   {background:#080808;}
 }
+
 @-webkit-keyframes animate_bg {
 	0%   {background:#080808;}
 	20%  {background:#151515;}
@@ -62,4 +66,8 @@ img {
 	60%  {background:#151515;}
 	80%   {background:#080808;}
 	100%   {background:#080808;}
+}
+
+div{
+	display: inline-block;
 }

@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>GeoLocation Testing</title>
+	<style>
+		body {
+			font-family: "Lucida Console", Monaco, monospace
+		}
+	</style>
+  </head>
+  <body>
+    <h2>GeoLocation Testing</h2>
+	<div id='location'></div>
+  </body>
+  	<script>
+		var div_location = document.getElementById("location");
+		function getLocation() {
+			if (navigator.geolocation) {
+				navigator.geolocation.getCurrentPosition(showPosition);
+			} else {
+				div_location.innerHTML = "Geolocation is not supported by this browser.";
+			}
+		}
+		function showPosition(position) {
+			div_location.innerHTML = "Latitude: " + position.coords.latitude + 
+			"<br>Longitude: " + position.coords.longitude; 
+		}
+		getLocation();
+	</script>
+</html>
